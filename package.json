@@ -1,7 +1,7 @@
 {
-  "name": "globalpay-websdk-vue",
+  "name": "globalpay-vue",
   "version": "0.0.1",
-  "description": "globalpay gateway sdk for vue application",
+  "description": "globalpay gateway library for vue application",
   "main": "./globalpay.umd.js",
   "module": "./globalpay.mjs",
   "types": "./index.d.ts",

@@ -27,7 +27,6 @@ const props = withDefaults(defineProps<{
 
 export interface GeneratePaymentLinkPayload {
   amount: number,
-  secretKey: string,
   merchantTransactionReference: string,
   redirectUrl: string,
   customer: {
