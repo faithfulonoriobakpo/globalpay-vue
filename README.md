@@ -20,11 +20,11 @@ import { GeneratePaymentLinkPayload, GeneratePaymentLinkError } from '@zenith/gl
 
 const payload: GeneratePaymentLinkPayload = {
     amount: 200,
-    merchantTransactionReference: "yfrf534534gce",
+    merchantTransactionReference: "your-reference",
     redirectUrl: "www.google.com",
     customer: {
-        lastName: "bn",
-        firstName: "John",
+        lastName: "customerfirstname",
+        firstName: "customerlastname",
         currency: "NGN",
         phoneNumber: "081000000000",
         address: "",
