@@ -1,4 +1,4 @@
-# GlobalPay Web SDK for VueJs
+# GlobalPay Library for VueJs
 
 This is a VueJs library for integrating GlobalPay Payment Gateway into VueJs applications.
 
