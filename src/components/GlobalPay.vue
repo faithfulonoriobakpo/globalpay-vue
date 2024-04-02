@@ -93,7 +93,8 @@ const generatePaymentLink = () => {
     async response => {
       if (!response.ok) {
         const errorResponse = await response.clone().json();
-        throw JSON.stringify(errorResponse);
+        const sanitizedError = sanitizedString(JSON.stringify(errorResponse))
+        throw sanitizedError;
       }
       return response.json();
     }
@@ -133,6 +134,10 @@ for (const key in payload) {
   }
 }
 return emptyKeys;
+}
+
+const sanitizedString = (string: string) => {
+  return string.replace(/[\x00-\x1F\x7F]/g, ' ');
 }
 </script>
 
