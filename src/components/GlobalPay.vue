@@ -105,7 +105,6 @@ const generatePaymentLink = () => {
   })
   .catch(
     error => {
-      console.error(JSON.parse(error));
       props.onError(
         {
           message: 'error occurred generating paymentlink',
