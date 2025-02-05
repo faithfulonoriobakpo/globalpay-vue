@@ -7,7 +7,7 @@ This is a VueJs library for integrating GlobalPay Payment Gateway into VueJs app
 You can install this library via npm:
 
 ```bash
-npm install @zenith/globalpay-vue
+npm install globalpay-vue
 ```
 
 ## Example Usage
@@ -15,8 +15,8 @@ npm install @zenith/globalpay-vue
 
 ```vue
 <script setup lang="ts">
-import { GlobalPay } from '@zenith/globalpay-vue';
-import { GeneratePaymentLinkPayload, GeneratePaymentLinkError } from '@zenith/globalpay-vue/components/GlobalPay.vue';
+import { GlobalPay } from 'globalpay-vue';
+import { GeneratePaymentLinkPayload, GeneratePaymentLinkError } from 'globalpay-vue/components/GlobalPay.vue';
 
 const payload: GeneratePaymentLinkPayload = {
     amount: 200,
